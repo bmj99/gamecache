@@ -653,6 +653,107 @@ body {
     color: #333;
 }
 
+/* =========================================
+   DARK MODE OVERRIDES
+   ========================================= */
+:root {
+    color-scheme: dark;
+}
+
+/* 1. Main canvas & base text */
+body,
+.facets {
+    background-color: #0f172a; /* Deep slate */
+    color: #cbd5e1;            /* Soft light gray text */
+}
+
+/* 2. Top search bar & secondary card strips */
+.search,
+.stats-bar,
+.bottom-info {
+    background-color: #1e293b;
+}
+
+/* 3. Inputs, dropdowns, popups & pagination buttons */
+.filter-dropdown,
+.filter-dropdown[open] > .filter-dropdown-content,
+#search-input,
+#sort-select,
+.game-details,
+.pagination button {
+    background-color: #1e293b;
+    color: #f1f5f9;
+    border-color: #334155;
+}
+
+/* 4. Borders & dividers inside the game details popup */
+.card-header,
+.stats-bar,
+.description-section,
+.tags-section,
+.cover-image img {
+    border-color: #334155;
+}
+
+/* 5. Muted text & SVG complexity gauge */
+.stat-item {
+    color: #94a3b8;
+}
+
+.complexity-gauge .gauge-bg {
+    stroke: #334155;
+}
+
+.complexity-gauge .gauge-text {
+    fill: #f1f5f9;
+}
+
+/* 6. Chips, badges & hover states */
+.tag-chip,
+.tag-chip.mechanics,
+.tag-chip.categories,
+.expansion-chip,
+.facet-count {
+    background-color: #334155;
+    color: #e2e8f0;
+    border-color: #475569;
+}
+
+.expansion-chip:hover,
+.pagination button:hover {
+    background-color: #475569;
+    color: #ffffff;
+}
+
+.expansions-section .expansion-chips a.expansion-tile {
+    color: #e2e8f0;
+}
+
+/* 7. Brighten the red accent slightly so links are readable on dark backgrounds */
+a,
+.expansions-toggle,
+.expansions-section div a {
+    color: #f87171;
+}
+
+/* 8. Error box & search highlight */
+.error {
+    background-color: #450a0a;
+    border-color: #7f1d1d;
+    color: #fecaca;
+}
+
+.error pre {
+    background-color: #1e293b;
+    border-color: #7f1d1d;
+    color: #f8fafc;
+}
+
+.highlight {
+    background-color: #eab308;
+    color: #0f172a;
+}
+
 /* Mobile: keep last so these override the base rules above */
 @media screen and (max-width: 640px) {
     .stats {
