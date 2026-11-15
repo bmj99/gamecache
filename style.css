@@ -754,6 +754,12 @@ a,
     color: #0f172a;
 }
 
+.game-details .description-section,
+.game-details .teaser-text,
+.game-details .more-button {
+    color: #1e293b;
+}
+
 /* Mobile: keep last so these override the base rules above */
 @media screen and (max-width: 640px) {
     .stats {
